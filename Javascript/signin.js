@@ -26,7 +26,7 @@ function signIn(username, password){
     
     for(i=0; i<database.length; i++){
         if(username === database[i].username && password === database[i].password){
-            window.location.href = "index.html";
+            window.location.href = "dashboard.html";
             // document.getElementById("info").innerHTML = username+" You are logged in";
             return
         }
