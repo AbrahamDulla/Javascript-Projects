@@ -6,23 +6,44 @@
 
 </head>
 <body>
-    <form id="form">
-        <p class="info" id="info"></p>
-        <div class="login-container">
-       <div class="input-fields">
-           <div class="user-name">
-            <label  > User name</label> <br>
-            <input type="text" id="username-input"  placeholder="enter user name">  <br> <br>
-           </div>
+    <div class="split left">
+        <div class="centered">
+                    
+        </div>
+      </div>
+      
+      <div class="split right">
+        <div class="centered">
+            <form id="form">
 
-           <div class="password">
-            <label for="psw">Password</label> <br>
-            <input type="password" id="password-input"  placeholder="enter password" name="Password"> <br> <br>
-           </div>
-           <button onclick="signIn()"  type="button">Login</button>
-       </div>
-    </div>
-    </form>
+                <p class="info" id="info"></p>
+                <div class="login-container">
+                    <div class="header">
+                        <h1>Sign in</h1>
+                    </div>
+                    <div class="login-contents">
+                        <div class="input-fields">
+                            <div class="user-name">
+                             <input type="text" id="username-input"  placeholder="User Name">  <br> <br>
+                            </div>
+                       
+                            <div class="password">
+                             <input type="password" id="password-input"  placeholder="Password" name="Password"> <br> <br>
+                            </div>
+
+                            <div class="forget-password">
+                                <p><input type="checkbox" checked="checked" name="remember"> Remember me  &nbsp; &nbsp; &nbsp;
+                                Forgot <a href="#">password?</a></p>
+                            </div>
+
+                            <button onclick="signIn()"  type="button">Login</button>
+                        </div>
+                    </div>
+              </div>
+              </form>
+        </div>
+      </div>
 </body>
 <script src="/Javascript/signin.js"></script>
 </html>
+

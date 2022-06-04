@@ -35,6 +35,12 @@ function signIn(username, password){
         document.getElementById("info").innerHTML = " Incorrect username or password";
 }
 
+
+
 function signOut(){
-    window.location.href = "signIn.html";
+    if (confirm("Are you sure you want to logout ?") == true) {
+        window.location.href = "signIn.html";
+    } else {
+        window.location.href = "#";
+    }
 }

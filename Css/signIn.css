@@ -1,19 +1,53 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
 .login-container{
+ display: block;
+ position: static;
  width: 400px;
- height: 250px;
+ height: 450px;
  background-color: rgb(255, 255, 255);
- padding-top: 20px;
- border-style: solid;
- border-color: rgb(214, 214, 214);
+ box-shadow: 1px 1px 2px 2px #e7e5e5;
+ border-radius: 15px;
+}
+.login-contents{
+ height: 320px;
+ display: flex;
+ justify-content: center;
+ padding-top: 30px;
+}
+
+.input-fields{
+  margin: auto;
+}
+
+.header{
+  display: flex;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 55px;
+  width: 400px;
+  background-color: rgb(88, 179, 190);
+  box-shadow: 0px 0px 0px 0px #e7e5e5;
+}
+
+.header h1{
+  justify-content: center;
+  margin: auto;
+  color: white;
 }
 
 input[type=text], input[type=password] {
-    width: 250px;
+    width: 300px;
     padding: 10px;
     margin-bottom: 15px; 
+    margin-top: 5px;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    border-radius: 5px;
   }
 
   
@@ -26,20 +60,55 @@ input[type=text], input[type=password] {
       margin: auto;
       width: fit-content;
   }
-  .login-container{
-      display: flex;
-      justify-content: center;
-      background-color: rgb(88, 179, 190);
-
-  }
 
   button{
-    width: 60px;
-    height: 30px;  
+    width: 300px;
+    height: 35px;  
     margin: auto;
+    background-color: rgb(88, 179, 190);
+    border:0ch;
+    border-radius: 5px;
+    color: white;
+    font-size: large;
+    margin-top: 20px;
+  }
+
+  .forget-password{
+    margin-top: -30px;
+    margin-bottom: 30px;
+  }
+
+  .forget-password a{
+   text-decoration: none;
+  }
+
+  button:hover {
+    background-color: rgb(155, 205, 210); /* Green */
   }
 
   .info{
     height: 1rem;
     color: red;
   }
+
+  /* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: rgb(88, 179, 190);
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: rgb(255, 255, 255);
+}
