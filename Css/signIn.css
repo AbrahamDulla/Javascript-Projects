@@ -41,4 +41,5 @@ input[type=text], input[type=password] {
 
   .info{
     height: 1rem;
+    color: red;
   }

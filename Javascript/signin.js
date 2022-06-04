@@ -1,4 +1,4 @@
-var database = [
+var database = [ 
     {
         username: "Abraham",
         password: "abrish"
@@ -27,12 +27,12 @@ function signIn(username, password){
     for(i=0; i<database.length; i++){
         if(username === database[i].username && password === database[i].password){
             window.location.href = "dashboard.html";
-            // document.getElementById("info").innerHTML = username+" You are logged in";
+            document.getElementById("app-bar-info").innerHTML = username+" You are logged in";
             return
         }
     }
 
-        document.getElementById("info").innerHTML = " Unknown user";
+        document.getElementById("info").innerHTML = " Incorrect username or password";
 }
 
 function signOut(){
