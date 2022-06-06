@@ -19,13 +19,16 @@
 }
 
 .side-bar p{
-    color: darkslategrey;
-    background-color: bisque;
+    color: rgb(88, 179, 190);
+    background-color: rgb(255, 255, 255);
     width: 135px;
     height: 25px;
     margin-left: 5px;
     text-align: center;
     padding: 3px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 20px;
 }
 
 .top-nav ul{
